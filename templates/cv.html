@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/jpg"href="build/img/min.jpg">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/mia.css' ) }}">
+    <title>CV-NahumRM</title>
+</head>
+
+<body>
+    <header class="container">
+    <!-- Menu de encabezado-->
+    <div class="contenedor-header"> 
+        <header>
+            <div class="logo">
+                <a href="#">Nahum Rangel</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                <li><a href="#inicio" onclick="seleccionar()">Main</a></li>
+                <li><a href="#sobremi" onclick="seleccionar()">About me</a></li>
+                <li><a href="#skills" onclick="seleccionar()">Skills</a></li>
+                <li><a href="#Curriculum" onclick="seleccionar()">Resume</a></li>
+                <li><a href="#Proyectos" onclick="seleccionar()">Projects</a></li>
+                <li><a href="#Contacto" onclick="seleccionar()">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+    <!-- Seccion inicio-->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+         <div class="contenedor-img">
+            <img src="build/img/jorge.jpg" alt="  ">
+        </div>
+        <h1>Nahum Rangel</h1>
+         <h2>Systems Engineer</h2>
+           <div class="redes"> 
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a> 
+            <a href="www.linkedin.com/in/nahumrm"><i class="fa-brands fa-linkedin"></i></i></a>
+        </div>
+        </div>
+    </section>
+
+    <!-- Seccion sobre mi-->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>About me</h2>
+            <p><span>Hello, I am Nahum Rangel.</span> I am a Systems Engineer with a specialty in Software Developer area, 
+                I am currently working at IBM as Software Developer.</p>
+
+            <div class="fila">
+                <!-- Datos personales-->
+                <div class="col">
+                    <h3>Personal information</h3>
+                    <ul>
+                        <li>
+                            <br>
+                            <strong> Email </strong>
+                        </li>
+                        <li>
+                            <strong> Address </strong>  
+                        </li>
+                        <li>
+                            <strong> Job Role </strong>
+                        </li>
+                    </ul>
+                    </div>
+                    <div class="col">
+                        <h3></h3>
+                        <br>
+                        <br>
+                        <ul>
+                            <li>
+                                nranmag@gmail.com
+                            </li>
+                            <li>
+                                 Guadalajara, Jal, MEX.
+                            </li>
+                            <li>
+                                <span>Software Developer </span>
+                            </li>
+                        </ul>
+                        
+                    </div>
+                    <!-- Interes-->
+                    <div class="col">
+                        
+                    <h3>Interests</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                           <a href="https://www.universal-robots.com/products/collaborative-robots-cobots-benefits/?utm_source=Google&utm_medium=cpc&utm_cja=Demo&utm_leadsource=Paid%20Search&utm_campaign=HQ_US_Always-On2021&utm_content=textad&utm_term=collaborative%20robots&gclid=Cj0KCQjw0tKiBhC6ARIsAAOXutknw4CCtfAWJEI8rZ9I1KHsU_rtJQ2CXHa5XBe6t-SpwRWSzwJV_VcaAufWEALw_wcB"><i class="fa-solid fa-robot"></i></a>
+                        <span>Cobots</span>
+                        </div> 
+                        <div class="interes">
+                          <a href="https://www.w3schools.com/html/html_intro.asp#:~:text=HTML%20stands%20for%20Hyper%20Text,how%20to%20display%20the%20content"><i class="fa-brands fa-html5"></i></a>
+                        <span>HTML</span>
+                        </div>  
+                        <div class="interes">
+                            <a href="https://www.w3schools.com/css/"><i class="fa-brands fa-css3-alt"></i></a>
+                        <span> CCS</span>
+                        </div> 
+                        <div class="interes">
+                            <a href="https://www.redhat.com/en/engage/economic-impact-rhel-s-201904230659?sc_cid=7013a0000034jUtAAI&gclid=Cj0KCQjw0tKiBhC6ARIsAAOXutn10vpRGXduS88Fs1TLsgsOLJHQR6fMsDkQloTWnUY7dERCdOrOsAsaAhkdEALw_wcB&gclsrc=aw.ds"><i class="fa-brands fa-linux"></i></a>
+                        <span>Linux</span> 
+                        </div> 
+                        <div class="interes">
+                            <a href="https://www.sciencedirect.com/topics/engineering/mechatronics"><i class="fa-sharp fa-solid fa-gears"></i></a>
+                            <span>Mechatronic</span>
+                        </div>
+                        <div class="interes">
+                            <a href="https://cloud.google.com/learn/what-is-artificial-intelligence?hl=es-419"><i class="fa-solid fa-microchip"></i></a>
+                        <span>Technology</span>                     
+                    </div>
+                </div>
+            </div>
+          
+        </div>
+
+    </section>
+    <!--Seccion skills -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!--Technical skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Proteus</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>RoboDK</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>PhotoShop</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Visual Studio Code</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Arduino</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Professional skill -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Communication</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Teamwork</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creativity</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedication</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Responsibility</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>English</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>35%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Seccion curricumulum-->
+    <section id="Curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2> Resume</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Education</h3>
+                    <div class="item izq">
+                        <h4>UTEG</h4>
+                        <span class="casa">Universidad Tecnológica de Guadalajara</span>
+                        <span class="fecha">2005-2009</span>
+                        <p>
+                        <br>
+                        Competency-based learning.
+                        <br>
+                        <abbr title="Learning workshop">TAE</abbr> basic programming with a bit of arduino.
+                        <br>
+                        Certification in word, powerpoint and excel.
+                        <br>
+                        Remote control car project.
+                        </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <br>
+                        <h4>FIME</h4>
+                        <span class="casa">Formación Integral Metropolitana</span>
+                        <span class="fecha">2019-2023</span>
+                        <p>
+                            Mechatronic Engineer and Mechatronic Technician.
+                        <br>
+                        <br>
+                        Management of software for equipment automation.
+                        <br>
+                      <abbr title="Programmable Logic Control">PlC</abbr> handling.
+                        <br>
+                        Management of tools for maintenance of electrical equipment.
+                        <br>
+                        </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col derecha">
+                    <h3>Work experience</h3>
+                    <div class="item der">
+                        <h4>IBM</h4>
+                        <span class="casa">Testing technician</span>
+                        <span class="fecha">2022-2022</span>
+                        <p>
+                    <br>
+                    Experience connecting IBM systems.
+                    <br>
+                   <abbr title="Prueba de rigidez dielectrica"> HIPOT</abbr> experience.
+                    <br>
+                    Experience in driving a pallet truck and lifter.
+                    <br>
+                    Quality experience..
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <br>
+                        <h4>IBM</h4>
+                        <span class="casa">Test Analyzer</span>
+                        <span class="fecha">2023-2023</span>
+                        <p>
+                            <br>
+                            Test technician experience.
+                    <br>
+                    Experience connecting IBM systems.
+                    <br>
+                     <abbr title="Prueba de rigidez dielectrica"> HIPOT</abbr> experience
+                    <br>
+                    Experience in driving a pallet truck and lifter.
+                    <br>
+                    Basic linux command experience.
+                    <br>
+                    Networking experience.
+                    <br>
+                    Troubleshooting experience.
+                    <br>
+                    Debug experience.
+                    <br>
+                    Knowledge of server components.
+                    <br> 
+                    Quality experience.
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button>
+                Download Resume <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!--Seccion de Proyectos-->
+    <section id="Proyectos" class="proyectos">
+        <div class="contenido-seccion">
+            <h2>Projects</h2>
+            <p>Projects where I work within the IBM company</p>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="build/img/1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Power systems</h3>
+                        <p>Testing technician</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="build/img/2.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Project Z</h3>
+                        <p>Test Analyzer</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="build/img/3.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Project MGEN cloud pak systems</h3>
+                        <p>Test Analyzer</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="build/img/4.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Project Abell spectrum fusion</h3>
+                        <p>Test Analyzer</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <!--Seccion contactos-->
+    <section id="Contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>Contact</h2>
+            <div class="fila">
+                <!-- Formulario-->
+                <div class="col">
+                    <input type="text" placeholder="Your Name">
+                    <input type="text" placeholder="Numer phone">
+                    <input type="text" placeholder="Mail Address">
+                    <input type="text" placeholder="Subject">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                    <button>
+                        Send Message <i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <br>
+                <!--Mapa-->
+                <div class="col">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3735.5293775453324!2d-103.29345492574977!3d20.56642808096969!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842f4cc847699a75%3A0x980aa4620402bf77!2sIBM%20Campus%20Tecnol%C3%B3gico%20Guadalajara!5e0!3m2!1ses-419!2sus!4v1681832950095!5m2!1ses-419!2sus" 
+                  width="600" height="450" style="border:0;" 
+                  allowfullscreen="" loading="lazy" 
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+                
+                  <div class="info">
+                    <br>
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            El Salto, Guadalajara, México
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-envelope"></i>
+                            Email: nranmag@gmail.com
+                        </li>
+                    </ul>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer-->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes"> 
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a> 
+            <a href="https://mx.linkedin.com/in/jorge-alberto-reyes-ruiz-9b4b7121b?trk=people-guest_people_search-card"><i class="fa-brands fa-linkedin"></i></i></a>
+        </div>
+        <p> copyright &copy; 2023 Nranmag</p>
+    </footer>
+
+    <script src="build/js/script.js"></script>
+</header>
+</body>
+</body>
+</html>
